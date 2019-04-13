@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutFullName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:paddingBottom="@dimen/size_of_value_three"
+            android:paddingTop="@dimen/size_of_value_three"
+            android:textColorHint="@color/black_50"
+            app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+            app:hintTextAppearance="@style/bus">
+
+            <com.payz24.customviews.CustomEditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/size_of_value_five"
+                android:textColor="@color/black_80"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black_50"
+                app:theme="@style/bus"
+                fonts:custom_font="@string/aller_std_regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:paddingBottom="@dimen/size_of_value_three"
+            android:paddingTop="@dimen/size_of_value_three"
+            android:textColorHint="@color/black_50"
+            app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+            app:hintTextAppearance="@style/bus">
+
+            <com.payz24.customviews.CustomEditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/size_of_value_five"
+                android:textColor="@color/black_80"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black_50"
+                app:theme="@style/bus"
+                fonts:custom_font="@string/aller_std_regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivMale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size_of_value_five"
+            android:src="@drawable/ic_boy_unselected" />
+
+        <ImageView
+            android:id="@+id/ivFemale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/size_of_value_five"
+            android:src="@drawable/ic_girl_unselected" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/medium_grey" />
+</LinearLayout>

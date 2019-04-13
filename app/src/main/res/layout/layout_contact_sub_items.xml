@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_of_value_five"
+    android:orientation="vertical">
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:padding="@dimen/size_of_value_five"
+        android:textColor="@color/black_90"
+        fonts:custom_font="@string/aller_std_regular" />
+
+</LinearLayout>

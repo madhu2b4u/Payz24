@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/medium_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout"
+            layout="@layout/layout_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llDepart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_of_value_five"
+            android:background="@drawable/rectangle_bg"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_of_value_two"
+                android:background="@drawable/videos_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_of_value_five"
+                    android:layout_marginRight="@dimen/size_of_value_five"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_plane_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvDepartSource"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/size_of_value_ten"
+                            android:layout_marginRight="@dimen/size_of_value_ten"
+                            android:text=""
+                            android:textColor="@color/white"
+                            fonts:custom_font="@string/aller_std_bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_flight_to_arrow" />
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvDepartDestination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/size_of_value_five"
+                            android:layout_marginStart="@dimen/size_of_value_five"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            fonts:custom_font="@string/aller_std_bold" />
+                    </LinearLayout>
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvDepartDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        fonts:custom_font="@string/aller_std_bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDepartContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_of_value_two"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_of_value_five"
+            android:background="@drawable/rectangle_bg"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_of_value_two"
+                android:background="@drawable/videos_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_of_value_five"
+                    android:layout_marginRight="@dimen/size_of_value_five"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_plane_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvReturnSource"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/size_of_value_ten"
+                            android:layout_marginRight="@dimen/size_of_value_ten"
+                            android:text=""
+                            android:textColor="@color/white"
+                            fonts:custom_font="@string/aller_std_bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_flight_to_arrow" />
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvReturnDestination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/size_of_value_five"
+                            android:layout_marginStart="@dimen/size_of_value_five"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            fonts:custom_font="@string/aller_std_bold" />
+                    </LinearLayout>
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvReturnDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        fonts:custom_font="@string/aller_std_bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llReturnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_of_value_two"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCancellationPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_of_value_five"
+            android:background="@drawable/cancellation_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_of_value_five">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size_of_value_five"
+                android:layout_marginStart="@dimen/size_of_value_five"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_notepad" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_of_value_twenty"
+                android:layout_marginStart="@dimen/size_of_value_twenty"
+                android:layout_weight="70"
+                android:orientation="vertical">
+
+                <com.payz24.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancellation and Baggage Policy"
+                    android:textColor="@color/colorPrimary"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules and polices"
+                    android:textColor="@color/black_90"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/size_of_value_five"
+                android:layout_marginRight="@dimen/size_of_value_five"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_next_arrow_red" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_of_value_ten">
+
+            <LinearLayout
+                android:id="@+id/llFare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvFare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_info"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableRight="@drawable/ic_info"
+                    android:text=""
+                    android:textColor="@color/white"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvNumberOfPersons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/white" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvContinue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Continue"
+                android:textColor="@color/white"
+                fonts:custom_font="@string/aller_std_bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

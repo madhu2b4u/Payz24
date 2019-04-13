@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/medium_grey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_of_value_two_hundred"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/thank_you_for_booking_with_us"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/medium_dark_grey" />
+
+        <LinearLayout
+            android:id="@+id/llBookingInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_of_value_ten">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:orientation="vertical">
+
+                <com.payz24.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pnr"
+                    android:textColor="@color/black_50"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvBookingId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_of_value_five"
+                    android:text="@string/ticket_number"
+                    android:textColor="@color/colorPrimary"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_drop_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/medium_dark_grey" />
+
+        <LinearLayout
+            android:id="@+id/llJourneyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_of_value_ten"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/layout"
+                layout="@layout/layout_booking_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llBookReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_of_value_ten">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_of_value_ten"
+                android:layout_marginRight="@dimen/size_of_value_ten"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_flight_arrow" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvBookReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="@string/book_return"
+                android:textColor="@color/colorPrimary"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tvHomes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_of_value_ten">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_of_value_ten"
+                android:layout_marginRight="@dimen/size_of_value_ten"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_home_black_24dp" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="@string/home"
+                android:textColor="@color/colorPrimary"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_of_value_fifteen"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="#474747"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_ten"
+                android:gravity="center"
+                android:text="@string/help_us_serve_you_better_by_rating_your_experience"
+                android:textColor="@color/white"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_ten"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/size_of_value_ten"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+-->
+    </LinearLayout>
+</ScrollView>

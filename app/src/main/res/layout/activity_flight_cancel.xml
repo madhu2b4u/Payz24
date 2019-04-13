@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/medium_grey"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:id="@+id/ocllBookingInformation"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/white"
+                   android:orientation="horizontal"
+                   android:padding="@dimen/size_of_value_ten">
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="80"
+                       android:orientation="vertical">
+
+                       <com.payz24.customviews.CustomTextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/pnr"
+                           android:textColor="@color/black_50"
+                           fonts:custom_font="@string/aller_std_regular" />
+
+                       <com.payz24.customviews.CustomTextView
+                           android:id="@+id/octvBookingId"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/size_of_value_five"
+                           android:text="@string/ticket_number"
+                           android:textColor="@color/colorPrimary"
+                           fonts:custom_font="@string/aller_std_regular" />
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/medium_dark_grey" />
+
+               <LinearLayout
+                   android:id="@+id/ollJourneyDetails"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="@dimen/size_of_value_ten"
+                   android:visibility="visible">
+
+                   <include
+                       android:id="@+id/layout"
+                       layout="@layout/layout_oneway_cancel"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+
+
+
+               </LinearLayout>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+
+               android:id="@+id/cancelReturn"
+               android:layout_height="wrap_content"
+               android:background="@color/medium_grey"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:id="@+id/rcllBookingInformation"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/white"
+                   android:orientation="horizontal"
+                   android:padding="@dimen/size_of_value_ten">
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="80"
+                       android:orientation="vertical">
+
+                       <com.payz24.customviews.CustomTextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/pnr"
+                           android:textColor="@color/black_50"
+                           fonts:custom_font="@string/aller_std_regular" />
+
+                       <com.payz24.customviews.CustomTextView
+                           android:id="@+id/rctvBookingId"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/size_of_value_five"
+                           android:text="@string/ticket_number"
+                           android:textColor="@color/colorPrimary"
+                           fonts:custom_font="@string/aller_std_regular" />
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/medium_dark_grey" />
+
+               <LinearLayout
+                   android:id="@+id/rllJourneyDetails"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="@dimen/size_of_value_ten"
+                   android:visibility="visible">
+
+                   <include
+                       android:id="@+id/layout"
+                       layout="@layout/layout_return_cancel"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+
+
+
+               </LinearLayout>
+           </LinearLayout>
+
+           <RadioButton
+               android:id="@+id/crbRefundToWallet"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/size_of_value_five"
+               android:text="@string/refund_to_wallet" />
+
+
+           <RadioButton
+               android:id="@+id/crbRefundToBank"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/size_of_value_five"
+               android:text="@string/refund_to_bank" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.payz24.customviews.CustomButton
+                android:id="@+id/cbtnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_ten"
+                android:background="@color/colorPrimary"
+                android:text="@string/cancel_ticket"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+       </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

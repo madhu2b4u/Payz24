@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "145609543396",
+    "firebase_url": "https://payz24-1518184732941.firebaseio.com",
+    "project_id": "payz24-1518184732941",
+    "storage_bucket": "payz24-1518184732941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145609543396:android:332647d5b5ed399e",
+        "android_client_info": {
+          "package_name": "com.payz24"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145609543396-ohpctao9f9sf5d56g0o32tv8l52sp9il.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.payz24",
+            "certificate_hash": "0fe6cbb812919a26edec2b34b2a0677aa4f58a74"
+          }
+        },
+        {
+          "client_id": "145609543396-c56rhjf0cmq4s5lgpoqlqkoa5bqnhemn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "145609543396-va95cl9bca56t4svaqlva036g2dhd10u.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "145609543396-c56rhjf0cmq4s5lgpoqlqkoa5bqnhemn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChjs6VQSg1Z0HCt0QZE48CFI7OT5iuoVU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145609543396-c56rhjf0cmq4s5lgpoqlqkoa5bqnhemn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/medium_grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#CCCCCC"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/size_of_value_five">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_bus" />
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvDayName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OCT 2018"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.payz24.customviews.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:text="@string/bus_ticket"
+                            android:textColor="@color/black_90"
+                            fonts:custom_font="@string/aller_std_regular" />
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_weight="50"
+                            android:gravity="end"
+                            android:text="@string/confirmed_capital"
+                            android:textColor="@color/green"
+                            fonts:custom_font="@string/aller_std_regular" />
+                    </LinearLayout>
+
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvSourceDestination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_of_value_five"
+                        android:text="Hyderabad - Vijayawada"
+                        android:textColor="@color/black"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvOperatorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_of_value_three"
+                        android:text="Sri Srinivasa Travels"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/cancelView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/size_of_value_three"
+                android:background="@color/medium_dark_grey"/>
+
+            <LinearLayout
+                android:id="@+id/llCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvBoardingPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:layout_marginLeft="@dimen/size_of_value_ten"
+                    android:layout_marginStart="@dimen/size_of_value_ten"
+                    android:text="Sri Srinivasa Travels"
+                    android:textColor="@color/black_90"
+                    android:visibility="gone"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:text="@string/cancel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:textColor="@color/colorPrimary"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

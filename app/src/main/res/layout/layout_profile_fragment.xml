@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_my_profile"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_my_profile"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="@string/my_profile"
+                fonts:custom_font="@string/open_sans_semibold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_edit_profile"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="@string/edit_profile"
+                fonts:custom_font="@string/open_sans_semibold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_change_password"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_change_password"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="@string/change_password"
+                fonts:custom_font="@string/open_sans_semibold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/refer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_share_blue_grey_200_24dp"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_share_blue_grey_200_24dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="@string/refer"
+                fonts:custom_font="@string/open_sans_semibold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+
+
+          <!--  <com.payz24.customviews.CustomTextView
+                android:id="@+id/scratchCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_crop_square_blue_grey_600_18dp"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_crop_square_blue_grey_600_18dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="Scratch Card"
+                fonts:custom_font="@string/open_sans_semibold" />
+-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_logout"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="@string/logout"
+                fonts:custom_font="@string/open_sans_semibold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/emergencycall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_logout"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="Support 24/7 toll free number 1800XXXXXXXX "
+                fonts:custom_font="@string/open_sans_semibold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/emergencyemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawablePadding="@dimen/size_of_value_fifteen"
+                android:drawableStart="@drawable/ic_logout"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_of_value_fifteen"
+                android:text="Support 24/7 support@payz24.com"
+                fonts:custom_font="@string/open_sans_semibold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/size_of_value_fifteen"
+        android:gravity="center"
+        android:padding="@dimen/size_of_value_fifteen"
+        fonts:custom_font="@string/open_sans_semibold" />
+
+</LinearLayout>

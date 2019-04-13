@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvPassengerSeatDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:layout_marginTop="@dimen/size_of_value_five"
+        android:text="@string/review_your_journey_and_passenger_details"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        fonts:custom_font="@string/aller_std_regular" />
+
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvPassengerSeatNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/size_of_value_five"
+        android:text="@string/review_your_journey_and_passenger_details"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        fonts:custom_font="@string/aller_std_regular" />
+</LinearLayout>

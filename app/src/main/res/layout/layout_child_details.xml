@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarThumbVertical="@drawable/scroll_bar_drawable">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_of_value_ten">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_traveller"
+                android:textColor="@color/colorPrimary"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_fifteen"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/miss" />
+
+                <RadioButton
+                    android:id="@+id/rbMaster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/master" />
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/size_of_value_three"
+                android:paddingTop="@dimen/size_of_value_three"
+                android:textColorHint="@color/black_90"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black_90"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/black_90"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutMiddleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/size_of_value_three"
+                android:paddingTop="@dimen/size_of_value_three"
+                android:textColorHint="@color/black_90"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etMiddleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/middle_name_optional"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black_90"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/black_90"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/size_of_value_three"
+                android:paddingTop="@dimen/size_of_value_three"
+                android:textColorHint="@color/black_90"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black_90"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/black_90"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/size_of_value_three"
+                android:paddingTop="@dimen/size_of_value_three"
+                android:textColorHint="@color/black_90"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/date_of_birth"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black_90"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/black_90"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutPassportNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/size_of_value_three"
+                android:paddingTop="@dimen/size_of_value_three"
+                android:textColorHint="@color/black_90"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etPassportNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/passport_number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black_90"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/black_90"
+                    app:theme="@style/bus" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_of_value_two"
+                android:text="@string/visa_type"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/visaTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_of_value_ten"
+                android:layout_marginTop="@dimen/size_of_value_ten"
+                android:visibility="gone"
+                android:entries="@array/visaTypes" />
+
+            <com.payz24.customviews.CustomEditText
+                android:id="@+id/etExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/expiry_date"
+                android:inputType="date"
+                android:maxLines="1"
+                android:padding="@dimen/size_of_value_ten"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomButton
+                android:id="@+id/btnAddTraveller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/add_traveller"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

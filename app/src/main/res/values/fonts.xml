@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_of_value_eleven">11sp</dimen>
+    <dimen name="font_size_of_value_twelve">12sp</dimen>
+    <dimen name="font_size_of_value_fourteen">14sp</dimen>
+    <dimen name="font_size_of_value_fifteen">15sp</dimen>
+    <dimen name="font_size_of_value_sixteen">16sp</dimen>
+    <dimen name="font_size_of_value_eighteen">18sp</dimen>
+    <dimen name="font_size_of_value_twenty">20sp</dimen>
+    <dimen name="font_size_of_value_thirty">30sp</dimen>
+</resources>

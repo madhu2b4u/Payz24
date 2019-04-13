@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/payzlogo" />
+            </LinearLayout>
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/size_of_value_four"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_of_value_eighteen"
+                fonts:custom_font="@string/open_sans_bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/size_of_value_three"
+                android:paddingEnd="@dimen/size_of_value_ten"
+                android:paddingLeft="@dimen/size_of_value_ten"
+                android:paddingRight="@dimen/size_of_value_ten"
+                android:paddingStart="@dimen/size_of_value_ten"
+                android:paddingTop="@dimen/size_of_value_three"
+                android:textColorHint="@color/white"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/loginText">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_name"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_name"
+                    android:hint="@string/email_mobile_number"
+                    android:inputType="textWebEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_fifteen"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    app:theme="@style/loginText"
+                    fonts:custom_font="@string/aller_std_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/size_of_value_three"
+                android:paddingEnd="@dimen/size_of_value_ten"
+                android:paddingLeft="@dimen/size_of_value_ten"
+                android:paddingRight="@dimen/size_of_value_ten"
+                android:paddingStart="@dimen/size_of_value_ten"
+                android:paddingTop="@dimen/size_of_value_three"
+                android:textColorHint="@color/white"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/loginText">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_password"
+                    android:hint="@string/password"
+                    android:inputType="textWebPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_fifteen"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    app:theme="@style/loginText"
+                    fonts:custom_font="@string/aller_std_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_of_value_fifteen"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llSignIn"
+                    android:layout_width="@dimen/size_of_value_hundred_and_twenty"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/get_started_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_of_value_ten">
+
+                    <com.payz24.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/sign_in"
+                        android:textColor="@color/colorPrimary"
+                        fonts:custom_font="@string/open_sans_semibold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/ic_sign_in_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <com.payz24.customviews.CustomEditText
+                        android:id="@+id/etForgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:text="@string/forgot_your_password"
+                        android:textColor="@color/white"
+                        android:theme="@style/loginText"
+                        fonts:custom_font="@string/open_sans_regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/size_of_value_fifteen"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="30"
+                    android:background="@color/white_80" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/size_of_value_five"
+                    android:layout_marginStart="@dimen/size_of_value_five"
+                    android:layout_weight="40"
+                    android:gravity="center"
+                    android:text="@string/or_sign_in_with"
+                    android:textColor="@color/white"
+                    fonts:custom_font="@string/open_sans_regular" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="30"
+                    android:background="@color/white_80" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_five">
+
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                    <ImageView
+                        android:id="@+id/ivFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_facebook"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_below="@+id/login_button"
+                        android:layout_alignLeft="@+id/login_button"
+                        android:layout_alignStart="@+id/login_button"
+                        android:layout_marginTop="16dp"
+                        android:visibility="gone"
+                        android:layout_alignRight="@+id/login_button"
+                        android:layout_alignEnd="@+id/login_button" />
+
+                    <ImageView
+                        android:id="@+id/ivGooglePlus"
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_of_value_fifteen"
+                        android:layout_marginStart="@dimen/size_of_value_fifteen"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_google_plus" />
+                </FrameLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_80" />
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/size_of_value_ten"
+            android:text="@string/new_user_sign_up_here"
+            android:textColor="@color/white"
+            fonts:custom_font="@string/open_sans_regular" />
+    </LinearLayout>
+
+</LinearLayout>

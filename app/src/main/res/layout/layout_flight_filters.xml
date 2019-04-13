@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_flight_filter_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/departure_from_hyderabad"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_of_value_ten"
+                android:layout_marginLeft="@dimen/size_of_value_ten"
+                android:layout_marginRight="@dimen/size_of_value_ten"
+                android:layout_marginStart="@dimen/size_of_value_ten"
+                android:background="@drawable/flight_filter_timings_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_ten">
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvBeforeElevenAM"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="@string/before_eleven_am"
+                    android:textColor="@color/black_90"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="@dimen/size_of_value_ten"
+                    android:layout_marginRight="@dimen/size_of_value_ten"
+                    android:background="@color/medium_dark_grey" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvElevenAM"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="@string/eleven_am_to_five_pm"
+                    android:textColor="@color/black_90"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_of_value_ten"
+                android:layout_marginLeft="@dimen/size_of_value_ten"
+                android:layout_marginRight="@dimen/size_of_value_ten"
+                android:layout_marginStart="@dimen/size_of_value_ten"
+                android:background="@drawable/flight_filter_timings_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_ten">
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvFivePM"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="@string/five_pm_nine_pm"
+                    android:textColor="@color/black_90"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="@dimen/size_of_value_ten"
+                    android:layout_marginRight="@dimen/size_of_value_ten"
+                    android:background="@color/medium_dark_grey" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvAfterNinePM"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="@string/after_nine_pm"
+                    android:textColor="@color/black_90"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_of_value_ten"
+                android:background="@drawable/flight_filter_timings_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_ten">
+
+                <LinearLayout
+                    android:id="@+id/llNonStops"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvNonstopCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvNonstop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/non_stop"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="@dimen/size_of_value_ten"
+                    android:layout_marginRight="@dimen/size_of_value_ten"
+                    android:background="@color/medium_dark_grey" />
+
+                <LinearLayout
+                    android:id="@+id/llOneStop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvStopCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvOneStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/stop"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="@dimen/size_of_value_ten"
+                    android:layout_marginRight="@dimen/size_of_value_ten"
+                    android:background="@color/medium_dark_grey" />
+
+                <LinearLayout
+                    android:id="@+id/llTwoPlusStops"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvTwoPlusCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="2+"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <com.payz24.customviews.CustomTextView
+                        android:id="@+id/tvTwoPlusStops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/stop"
+                        android:textColor="@color/black_90"
+                        fonts:custom_font="@string/aller_std_regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/preferred_airlines"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <LinearLayout
+                android:id="@+id/llPreferredAirlinesNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_of_value_ten" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvApplyFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/size_of_value_fifteen"
+        android:text="@string/apply_filter"
+        android:textColor="@color/white"
+        fonts:custom_font="@string/aller_std_regular" />
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_bus_layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_of_value_ten"
+        android:background="@drawable/lower_bg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.payz24.customviews.CustomButton
+            android:id="@+id/btnLower"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary"
+            android:text="@string/lower"
+            android:textColor="@color/white"
+            fonts:custom_font="@string/aller_std_bold" />
+
+        <com.payz24.customviews.CustomButton
+            android:id="@+id/btnUpper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@android:color/transparent"
+            android:text="@string/upper"
+            android:textColor="@color/black_90"
+            fonts:custom_font="@string/aller_std_bold" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvBusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:background="@drawable/bus_layout_bg"
+        android:padding="@dimen/size_of_value_ten"
+        android:scrollbarTrackVertical="@drawable/scroll_bar_drawable" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/medium_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llSeatUnSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_of_value_ten"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_notepad" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:orientation="vertical">
+
+                <com.payz24.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seat_booking_tips"
+                    android:textColor="@color/black"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvGuidelines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guidelines_for_getting_assured_seat"
+                    android:textColor="@color/black_50"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivRulesArrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_up_arrow" />
+
+        </LinearLayout>
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvRule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_of_value_thirty_five"
+            android:layout_marginStart="@dimen/size_of_value_thirty_five"
+            android:padding="@dimen/size_of_value_ten"
+            android:text="@string/single_lady_traveller_cannot_book_beside_a_male"
+            android:textColor="@color/black_50"
+            android:visibility="gone"
+            fonts:custom_font="@string/aller_std_regular" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llSeatSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_of_value_five"
+            android:layout_marginStart="@dimen/size_of_value_five"
+            android:layout_weight="40"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seat_no"
+                android:textColor="@color/black_50"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvSelectedSeatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seat_no"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@color/black_50"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seat_no"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivSeatSelectedArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/size_of_value_ten"
+            android:layout_marginLeft="@dimen/size_of_value_ten"
+            android:layout_marginRight="@dimen/size_of_value_ten"
+            android:layout_marginStart="@dimen/size_of_value_ten"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_up_arrow" />
+
+        <com.payz24.customviews.CustomButton
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/colorPrimary"
+            android:text="@string/proceed"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/no_stations_found"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        fonts:custom_font="@string/aller_std_regular" />
+</LinearLayout>

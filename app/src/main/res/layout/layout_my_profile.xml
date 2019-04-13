@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_of_value_ten">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_user_name"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_user_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_date_of_birth"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_date_of_birth"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/birth_date"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_mobile"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_mobile"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/mobile_number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_email_address"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_email_address"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/email"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_dark_grey" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_address"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_address"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/address"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_address"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_address"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="City"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_address"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_address"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="State"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_address"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_address"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Country"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutPinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etPinCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableLeft="@drawable/ic_profile_address"
+                    android:drawablePadding="@dimen/size_of_value_ten"
+                    android:drawableStart="@drawable/ic_profile_address"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/pin_code"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black_50"
+                    android:textColorHint="@color/black_80"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

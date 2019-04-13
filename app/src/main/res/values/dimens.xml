@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--toolBar dimens-->
+    <dimen name="first_keyline">0dp</dimen>
+    <dimen name="second_keyline">0dp</dimen>
+    <dimen name="toolbar_horizontal_padding">4dp</dimen>
+
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="ic_delete">30dp</dimen>
+    <dimen name="thumbnail">90dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="album_cover_height">160dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title">15dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+
+
+    <!--sizes-->
+    <dimen name="size_of_value_zero">0dp</dimen>
+    <dimen name="size_of_value_one">1dp</dimen>
+    <dimen name="size_of_value_two">2dp</dimen>
+    <dimen name="size_of_value_three">3dp</dimen>
+    <dimen name="size_of_value_four">4dp</dimen>
+    <dimen name="size_of_value_five">5dp</dimen>
+    <dimen name="size_of_value_six">6dp</dimen>
+    <dimen name="size_of_value_seven">7dp</dimen>
+    <dimen name="size_of_value_eight">8dp</dimen>
+    <dimen name="size_of_value_nine">9dp</dimen>
+    <dimen name="size_of_value_ten">10dp</dimen>
+    <dimen name="size_of_value_fifteen">15dp</dimen>
+    <dimen name="size_of_value_twenty">20dp</dimen>
+    <dimen name="size_of_value_twenty_five">25dp</dimen>
+    <dimen name="size_of_value_thirty">30dp</dimen>
+    <dimen name="size_of_value_thirty_five">35dp</dimen>
+    <dimen name="size_of_value_fourty">40dp</dimen>
+    <dimen name="size_of_value_fourty_five">45dp</dimen>
+    <dimen name="size_of_value_fifty">50dp</dimen>
+    <dimen name="size_of_value_fifty_five">55dp</dimen>
+    <dimen name="size_of_value_sixty">60dp</dimen>
+    <dimen name="size_of_value_sixty_five">65dp</dimen>
+    <dimen name="size_of_value_eighty">80dp</dimen>
+    <dimen name="size_of_value_eighty_five">85dp</dimen>
+    <dimen name="size_of_value_hundred">100dp</dimen>
+    <dimen name="size_of_value_hundred_and_fifty">150dp</dimen>
+    <dimen name="size_of_value_two_hundred">200dp</dimen>
+    <dimen name="size_of_value_two_hundred_and_fifty">250dp</dimen>
+    <dimen name="size_of_value_ninety">90dp</dimen>
+    <dimen name="size_of_value_hundred_and_twenty">120dp</dimen>
+    <dimen name="size_of_value_seventy">70dp</dimen>
+    <dimen name="size_of_value_eighteen">18dp</dimen>
+    <dimen name="size_of_value_seventeen">17dp</dimen>
+    <dimen name="size_of_value_hundred_and_fourty">140dp</dimen>
+    <dimen name="size_of_value_hundred_and_ten">110dp</dimen>
+    <dimen name="size_of_value_hundred_and_five">105dp</dimen>
+    <dimen name="size_of_value_five_hundred">500dp</dimen>
+    <dimen name="size_of_value_three_hundred">300dp</dimen>
+    <dimen name="size_of_value_hundred_and_seventy">170dp</dimen>
+    <dimen name="size_of_value_twelve">12dp</dimen>
+    <dimen name="font_size_of_value_twenty_five">25sp</dimen>
+</resources>

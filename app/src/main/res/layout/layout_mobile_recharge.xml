@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/medium_grey"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:background="@color/medium_grey"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarThumbVertical="@drawable/scroll_bar_drawable">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_ten">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:id="@+id/recharge_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:fitsSystemWindows="true"
+                    android:src="@drawable/ic_recharge" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_of_value_fifteen"
+                    android:layout_marginStart="@dimen/size_of_value_fifteen"
+                    android:layout_weight="80"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="80"
+                            android:orientation="vertical">
+
+                            <com.payz24.customviews.CustomTextView
+                                android:id="@+id/tvContactName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:hint="@string/contact_name"
+                                android:singleLine="true"
+                                android:text=""
+                                android:visibility="gone"
+                                android:textColor="@color/black"
+                                fonts:custom_font="@string/aller_std_bold" />
+
+                            <com.payz24.customviews.CustomEditText
+                                android:id="@+id/etContactNumber"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="true"
+                                android:hint="@string/contact_number"
+                                android:singleLine="true"
+                                android:background="@android:color/transparent"
+                                android:layout_marginTop="@dimen/size_of_value_ten"
+                                android:inputType="phone"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@drawable/cursor_black"
+                                fonts:custom_font="@string/aller_std_regular" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivChange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_contacts" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/size_of_value_five"
+                        android:background="@color/medium_grey" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_of_value_three"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbPrepaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/prepaid" />
+
+                        <RadioButton
+                            android:id="@+id/rbPostpaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_of_value_ten"
+                            android:layout_marginStart="@dimen/size_of_value_ten"
+                            android:text="@string/postpaid" />
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:id="@+id/ji"
+                        android:layout_marginTop="@dimen/size_of_value_five"
+                        android:background="@color/medium_grey" />
+
+                    <LinearLayout
+                        android:id="@+id/llOperatorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/size_of_value_five">
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvOperatorName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_of_value_five"
+                            android:layout_weight="80"
+                            android:hint="@string/select_operator"
+                            android:textColor="@color/black_90"
+                            fonts:custom_font="@string/aller_std_regular" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="20"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_drop_down" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewSeparator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/size_of_value_five"
+                        android:background="@color/medium_grey" />
+
+                    <LinearLayout
+                        android:id="@+id/llSelectCircleName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/size_of_value_five">
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvSelectCircle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_of_value_five"
+                            android:layout_weight="80"
+                            android:ellipsize="marquee"
+                            android:hint="@string/select_circle"
+                            android:singleLine="true"
+                            android:textColor="@color/black_90"
+                            fonts:custom_font="@string/aller_std_regular" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="20"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_drop_down" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_fifteen"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_of_value_ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_of_value_five"
+                    android:layout_marginStart="@dimen/size_of_value_five"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_rupee" />
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:hint="@string/enter_amount"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:textCursorDrawable="@drawable/cursor_black"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvViewPlans"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="@dimen/size_of_value_five"
+                    android:text="@string/view_plans"
+                    android:textColor="@color/white"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_fifteen"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/size_of_value_ten">
+
+
+                <com.payz24.customviews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/size_of_value_five"
+                    android:text="@string/debit_from"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/font_size_of_value_fourteen"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.payz24.customviews.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_of_value_five"
+                        android:layout_weight="30"
+                        android:background="@color/white"
+                        android:padding="@dimen/size_of_value_five"
+                        android:text="@string/wallet_balance"
+                        android:textColor="#BDBDBD"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_of_value_five"
+                        android:layout_weight="40"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/size_of_value_five">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_rupee_light_color" />
+
+                        <com.payz24.customviews.CustomTextView
+                            android:id="@+id/tvMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black_90"
+                            fonts:custom_font="@string/aller_std_regular" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cbWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/size_of_value_seven"
+                        android:padding="@dimen/size_of_value_five" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.payz24.customviews.CustomButton
+                    android:id="@+id/tvDebitCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:background="@color/medium_light_grey"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/debit_card"
+                    android:textColor="@color/black"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomButton
+                    android:id="@+id/tvCreditCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:background="@color/medium_light_grey"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/credit_card"
+                    android:textColor="@color/black"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomButton
+                    android:id="@+id/tvNetBanking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:background="@color/medium_light_grey"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/net_banking"
+                    android:textColor="@color/black"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/detailsFragment"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.payz24.customviews.CustomButton
+        android:id="@+id/tvRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/recharge"
+        android:textColor="@color/white"
+        fonts:custom_font="@string/aller_std_regular" />
+</LinearLayout>

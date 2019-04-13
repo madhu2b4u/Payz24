@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_of_value_ten">
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_aeroplane" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_of_value_ten"
+            android:layout_marginStart="@dimen/size_of_value_ten"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvStationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size_of_value_five"
+                android:layout_marginStart="@dimen/size_of_value_five"
+                android:text=""
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvStationFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:layout_marginLeft="@dimen/size_of_value_five"
+                android:layout_marginStart="@dimen/size_of_value_five"
+                android:text=""
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/size_of_value_five"
+        android:background="@color/medium_grey" />
+
+</LinearLayout>

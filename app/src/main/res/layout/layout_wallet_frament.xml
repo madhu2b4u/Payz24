@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_of_value_ten"
+        android:background="@drawable/wallet_balance_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/size_of_value_twenty">
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvNonPromotional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:padding="@dimen/size_of_value_four"
+            android:text="@string/non_promotional_balance"
+            android:textColor="@color/white"
+            fonts:custom_font="@string/aller_std_regular" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_80" />
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvNonPromotionalBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/size_of_value_five"
+            android:gravity="start"
+            android:padding="@dimen/size_of_value_four"
+            android:text="0"
+            android:textColor="@color/white"
+            fonts:custom_font="@string/aller_std_regular" />
+
+        <LinearLayout
+            android:id="@+id/llAddMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_of_value_ten"
+            android:background="@drawable/add_money_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_of_value_five">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_add_money_wallet" />
+
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvAddMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:padding="@dimen/size_of_value_four"
+                android:text="@string/add_money"
+                android:textColor="@color/colorPrimary"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_of_value_ten"
+        android:visibility="gone"
+        android:background="@drawable/wallet_balance_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/size_of_value_twenty">
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvPromotional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:padding="@dimen/size_of_value_four"
+            android:text="@string/promotional_balance"
+            android:textColor="@color/white"
+            fonts:custom_font="@string/aller_std_regular" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_80" />
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvPromotionalBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/size_of_value_ten"
+            android:gravity="start"
+            android:padding="@dimen/size_of_value_four"
+            android:text="0"
+            android:textColor="@color/white"
+            fonts:custom_font="@string/aller_std_regular" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_of_value_ten"
+        android:background="@drawable/invisibleborder"
+        android:orientation="vertical"
+        android:padding="@dimen/size_of_value_twenty">
+
+        <com.payz24.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:padding="@dimen/size_of_value_four"
+            android:text="@string/transaction"
+            android:textColor="@color/black"
+            fonts:custom_font="@string/aller_std_regular" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp"
+             android:gravity="center"
+            android:id="@+id/nottrans"
+             android:visibility="gone"
+             android:textColor="@color/black"
+             android:text="No Transactions"/>
+
+         <ListView
+             android:id="@+id/transactionList"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:divider="@null"
+             android:dividerHeight="0dp" />
+
+
+     </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

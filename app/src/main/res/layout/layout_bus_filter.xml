@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/medium_grey"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/bus_type_capital"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.payz24.customviews.CustomButton
+                    android:id="@+id/btnAC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/bus_filter_bg"
+                    android:text="@string/ac"
+                    android:textColor="@color/colorPrimary"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomButton
+                    android:id="@+id/btnNonAc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/bus_filter_bg"
+                    android:text="@string/non_ac"
+                    android:textColor="@color/colorPrimary"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.payz24.customviews.CustomButton
+                    android:id="@+id/btnSeater"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/bus_filter_bg"
+                    android:text="@string/seater"
+                    android:textColor="@color/colorPrimary"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <com.payz24.customviews.CustomButton
+                    android:id="@+id/btnSleeper"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/bus_filter_bg"
+                    android:text="@string/sleeper"
+                    android:textColor="@color/colorPrimary"
+                    fonts:custom_font="@string/aller_std_regular" />
+            </LinearLayout>
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/medium_grey"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/filter_by"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <LinearLayout
+                android:id="@+id/llBusOperators"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_drop_down" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvBusOperators"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:text="@string/buso"
+                    android:textColor="@color/black"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <ImageView
+                    android:id="@+id/ivBusOperatorsDropDown"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_drop_down" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/medium_grey" />
+
+            <LinearLayout
+                android:id="@+id/llBusBoardingPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_drop_down" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvBusBoardingPoints"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:padding="@dimen/size_of_value_ten"
+                    android:text="@string/boarding_points"
+                    android:textColor="@color/black"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <ImageView
+                    android:id="@+id/ivBusBoardingPointsDropDown"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_drop_down" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/medium_grey" />
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/medium_grey"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/filter_by_departure_time"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.payz24.customviews.CustomButton
+                        android:id="@+id/tvSixAM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:background="@drawable/bus_filter_bg"
+                        android:text="06:00 AM - 11:59 AM"
+                        android:textColor="@color/colorPrimary"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <com.payz24.customviews.CustomButton
+                        android:id="@+id/tvTwelvePM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:background="@drawable/bus_filter_bg"
+                        android:text="12:00 PM - 5:59 PM"
+                        android:textColor="@color/colorPrimary"
+                        fonts:custom_font="@string/aller_std_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.payz24.customviews.CustomButton
+                        android:id="@+id/tvSixPM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:background="@drawable/bus_filter_bg"
+                        android:text="06:00 PM - 11:59 PM"
+                        android:textColor="@color/colorPrimary"
+                        fonts:custom_font="@string/aller_std_regular" />
+
+                    <com.payz24.customviews.CustomButton
+                        android:id="@+id/tvTwelveAM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:background="@drawable/bus_filter_bg"
+                        android:text="12:00 AM - 5:59 AM"
+                        android:textColor="@color/colorPrimary"
+                        fonts:custom_font="@string/aller_std_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/clearfilter"
+                        android:text="Clear Filter"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.payz24.customviews.CustomButton
+        android:id="@+id/tvApply"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/colorPrimary"
+        android:text="@string/apply"
+        android:textColor="@color/white"
+        fonts:custom_font="@string/aller_std_regular" />
+
+</LinearLayout>

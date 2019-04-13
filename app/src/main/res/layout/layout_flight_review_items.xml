@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llLayover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/medium_grey"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_of_value_ten">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/size_of_value_five"
+            android:layout_marginRight="@dimen/size_of_value_five"
+            android:layout_marginTop="@dimen/size_of_value_one"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_time" />
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvLayOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="emirates Airline EK527(Economy)"
+            android:textColor="@color/black"
+            fonts:custom_font="@string/aller_std_regular" />
+    </LinearLayout>
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvFlightName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_of_value_thirty_five"
+        android:layout_marginStart="@dimen/size_of_value_thirty_five"
+        android:padding="@dimen/size_of_value_five"
+        android:text="emirates Airline EK527(Economy)"
+        android:textColor="@color/black"
+        fonts:custom_font="@string/aller_std_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/medium_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_of_value_five">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightDepartureDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="Fri 16 Feb"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightDepartureShortName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="HYD"
+                android:textColor="@color/colorPrimary"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightDepartureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="10:15"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightDepartureFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="Hyderabad"
+                android:textSize="12sp"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/medium_grey" />
+
+                <com.payz24.customviews.CustomTextView
+                    android:id="@+id/tvFlightTravelTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_of_value_five"
+                    android:text="Hyderabad"
+                    android:textColor="@color/black_90"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/medium_grey" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_plane_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightArrivalDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="Fri 16 Feb"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightArrivalShortName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="HYD"
+                android:textColor="@color/colorPrimary"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightArrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="10:15"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvFlightArrivalFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_of_value_five"
+                android:text="Hyderabad"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

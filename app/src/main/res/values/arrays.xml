@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="visaTypes">
+        <item>Business</item>
+        <item>Tourist</item>
+        <item>Student</item>
+        <item>Employment</item>
+        <item>Resident</item>
+        <item>Umrah</item>
+        <item>Hajj</item>
+        <item>Other</item>
+    </string-array>
+</resources>

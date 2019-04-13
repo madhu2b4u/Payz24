@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_bus_operators_filter_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvOperators"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarTrackVertical="@drawable/scroll_bar_drawable" />
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/done"
+        android:padding="@dimen/size_of_value_ten"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        fonts:custom_font="@string/aller_std_regular" />
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/no_routes_available"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        fonts:custom_font="@string/aller_std_regular" />
+
+</LinearLayout>

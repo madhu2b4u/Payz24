@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/size_of_value_ten"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:src="@drawable/ic_cancel"
+        android:contentDescription="@string/app_name"/>
+
+    <com.payz24.customviews.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:layout_gravity="center"
+        android:text="@string/filters"
+        android:layout_marginLeft="@dimen/size_of_value_fifteen"
+        android:layout_marginStart="@dimen/size_of_value_fifteen"
+        android:textColor="@color/white"
+        fonts:custom_font="@string/aller_std_bold" />
+
+    <com.payz24.customviews.CustomTextView
+        android:id="@+id/tvReset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        fonts:custom_font="@string/aller_std_bold" />
+</LinearLayout>

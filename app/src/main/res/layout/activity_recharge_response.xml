@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/size_of_value_ten"
+        android:layout_height="wrap_content">
+
+        <com.payz24.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge"
+            android:textColor="@color/black_50"
+            fonts:custom_font="@string/aller_std_regular" />
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvRnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_of_value_five"
+            android:text="@string/mobile_number"
+            android:textColor="@color/colorPrimary"
+            fonts:custom_font="@string/aller_std_regular" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_of_value_ten">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textColor="@color/black_50"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvRtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_of_value_ten">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Network"
+                android:textColor="@color/black_50"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvRnetwork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_of_value_ten">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textColor="@color/black_50"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvRamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_of_value_ten">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="@color/black_50"
+                fonts:custom_font="@string/aller_std_regular" />
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/rstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/rHome"
+            android:textColor="@color/white"
+            android:text="Home"
+            android:background="@color/red"
+            android:layout_gravity="bottom"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

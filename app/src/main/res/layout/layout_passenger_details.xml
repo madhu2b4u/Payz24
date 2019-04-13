@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/layout"
+            layout="@layout/layout_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/medium_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/size_of_value_ten">
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/contact_details"
+                android:textColor="@color/black"
+                fonts:custom_font="@string/aller_std_regular" />
+
+
+            <com.payz24.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_of_value_five"
+                android:text="@string/your_ticket_info_will_be_sent_here"
+                android:textColor="@color/black_90"
+                fonts:custom_font="@string/aller_std_regular" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/medium_dark_grey" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_of_value_ten"
+            android:paddingBottom="@dimen/size_of_value_three"
+            android:paddingTop="@dimen/size_of_value_three"
+            android:textColorHint="@color/black_50"
+            app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+            app:hintTextAppearance="@style/bus">
+
+            <com.payz24.customviews.CustomEditText
+                android:id="@+id/etEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/size_of_value_five"
+                android:textColor="@color/black_80"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black_50"
+                app:theme="@style/bus"
+                fonts:custom_font="@string/aller_std_regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/medium_grey" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_of_value_ten"
+            android:paddingBottom="@dimen/size_of_value_three"
+            android:paddingTop="@dimen/size_of_value_three"
+            android:textColorHint="@color/black_50"
+            app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+            app:hintTextAppearance="@style/bus">
+
+            <com.payz24.customviews.CustomEditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="@dimen/size_of_value_five"
+                android:textColor="@color/black_80"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black_50"
+                app:theme="@style/bus"
+                fonts:custom_font="@string/aller_std_regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/medium_grey" />
+
+        <com.payz24.customviews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/medium_grey"
+            android:padding="@dimen/size_of_value_ten"
+            android:text="@string/passenger_details"
+            android:textColor="@color/black"
+            fonts:custom_font="@string/aller_std_regular" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/medium_grey" />
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_of_value_ten" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/medium_grey" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/medium_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutCouponCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:layout_marginLeft="@dimen/size_of_value_five"
+                android:layout_marginStart="@dimen/size_of_value_five"
+                android:textColorHint="@color/black_50"
+                app:errorTextAppearance="@style/MaterialTheme.ErrorTextAppearance"
+                app:hintTextAppearance="@style/bus">
+
+                <com.payz24.customviews.CustomEditText
+                    android:id="@+id/etCouponCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:drawableLeft="@drawable/ic_coupon"
+                    android:drawablePadding="@dimen/size_of_value_five"
+                    android:drawableStart="@drawable/ic_coupon"
+                    android:hint="@string/coupon_code"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black_80"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black_50"
+                    app:theme="@style/bus"
+                    fonts:custom_font="@string/aller_std_regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.payz24.customviews.CustomTextView
+                android:id="@+id/tvApplyCoupon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="30"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/size_of_value_ten"
+                android:text="@string/apply"
+                android:textColor="@color/white" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <com.payz24.customviews.CustomTextView
+            android:id="@+id/tvContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_of_value_ten"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/size_of_value_fifteen"
+            android:text="@string/bus_continue"
+            android:textColor="@color/white" />
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
